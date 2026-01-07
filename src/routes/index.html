@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧊</text></svg>">
+    <title>Elliott's website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-color: rgb(255, 252, 240);
+            --font-color: rgb(16, 15, 15);
+            --border-color: rgb(183, 181, 172);
+            --hovered-border-color: rgb(16, 15, 15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            line-height: 1.6;
+            font-family: "Inter", system-ui, sans-serif;
+            background-color: var(--background-color);
+            color: var(--font-color);
+        }
+
+        body {
+            max-width: 50rem;
+            margin: 1rem;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+
+        a {
+            padding-inline: .25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid var(--border-color);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            border-bottom-color: var(--hovered-border-color);
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 2rem;
+        }
+
+        main {
+            margin-block: 1rem;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        main>div>p {
+            margin-block: .5rem;
+        }
+
+        footer {
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="display:none;">Elliott Storey</h1>
+        <a href="mailto:storey.elliott@gmail.com" target="_blank">Email</a>
+        <a href="https://linkedin.com/in/elliottstorey" target="_blank">LinkedIn</a>
+        <a href="https://github.com/elliottstorey" target="_blank">GitHub</a>
+        <a href="https://instagram.com/storey_elliott" target="_blank">Instagram</a>
+    </header>
+
+    <main>
+        <h2>Projects</h2>
+        <div>
+            <a href="https://useexecutive.com" target="_blank">Executive</a>
+            <p>An autonomous AI assistant with a structured memory system (storage and retrieval) capable of executing complex, multi-step tasks by autonomously integrating and operating external tools like a web browser and file system.</p>
+        </div>
+
+        <div>
+            <a href="https://github.com/ElliottStorey/chillml" target="_blank">chillml</a>
+            <p>A foundational machine learning library from scratch to master core algorithms, backpropagation, and fundamental ML architecture.</p>
+        </div>
+
+        <div>
+            <a href="https://dictionary.elliottstorey.com" target="_blank">Open Dictionary</a>
+            <p>A free, open-source dictionary platform designed to democratize access to language data. By combining AI generation with web scraping, the system provides unabridged definitions, while a crowdsourced feedback loop allows the community to refine entries in real-time.</p>
+        </div>
+
+        <div>
+            <a href="javascript:;">Microseasons (coming soon)</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Built using <a href="https://github.com/elliottstorey/framework" target="_blank">framework</a>. Hosted on a computer in my parent's basement using <a href="https://github.com/elliottstorey/foundation" target="_blank">foundation</a>.</p>
+    </footer>
+</body>
+
+</html>
